@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção principal -->
+    <section class="secao-principal">
+        <div class="conteudo-principal">
+
+            <!-- Foto de perfil -->
+            <img class="foto-perfil" src="minha-foto.jpg" alt="Foto de Moises">
+                <div class="textos">
+
+                <!-- Nome -->
+                <div class="nome">
+                    <div class="nome-cor1">Moises</div>
+                    <div class="nome-cor2">da Silva Melo</div>
+                </div>
+
+                <!-- atualmente -->
+                <p class="aluno"> Aluno de Analise e Desenvolvimento de Sistemas</p>
+
+                <!-- Descrição Minha  -->
+                <p class="descricao">
+                    Tenho 22 anos, estou cursando ADS presencial na Fasipe de sinop-MT.
+                    Trabalho em uma empresa de telecomunicacoes ha mais de 3 anos,<br> area de tecnologia, porem focado na parte de hardware.
+                </p>
+
+                <!-- projetos Brasil APIs -->
+                <div class="lista-apis">
+                    <div class="api">CEP</div>
+                    <div class="api">Feriados</div>
+                    <div class="api">DDD</div>
+                </div>
+
+                <!-- Botão -->
+                <a href="#projetos-apis" class="botao">Ver projetos APIs →</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-------------------- -->
+    <div class="linha-divisoria"></div>
+
+<section class="sobre-mim">
+    <div class="eu">
+        <h2> Sobre-mim </h2>
+        <p>Meu nome é Moisés da Silva Melo e sou uma pessoa dedicada e sempre disposta a aprender coisas novas. Tenho grande interesse por tecnologia e gosto de buscar soluções que possam facilitar a vida das pessoas. Acredito que o conhecimento e a persistência são fundamentais para alcançar bons resultados. Procuro crescer tanto pessoalmente quanto profissionalmente, valorizando a responsabilidade e o trabalho em equipe.
+        Meu objetivo é construir um futuro sólido por meio dos estudos e do desenvolvimento contínuo.
+        </p>
+    </div>
+</section>
+
+    <!-- habilidades -->
+
+<section>
+    <h2> o que eu domino </h2>
+
+    <div class="habilidades">
+        <div class="dominio">HTML</div>
+        <div class="dominio">CSS</div>
+        <div class="dominio">Javascript</div>
+    </div>
+</section>
+
+<section class="projetos-apis" id="projetos-apis">
+    <h2>Projetos APIs</h2>
+
+    <!-- Card CEP -->
+    <div class="card-api">
+        <h3 class="card-titulo">Consulta de CEP</h3>
+        <p class="card-descricao">Busque endereço completo a partir de um CEP usando a BrasilAPI.</p>
+        <div class="card-input-group">
+            <input class="card-input" type="text" id="input-cep" placeholder="Digite o CEP (ex: 01310100)" maxlength="8">
+            <button class="card-botao" onclick="buscarCEP()">Buscar</button>
+        </div>
+        <div class="card-resultado" id="resultado-cep"></div>
+    </div>
+
+    <!-- Card Feriados -->
+    <div class="card-api">
+        <h3 class="card-titulo">Feriados Nacionais</h3>
+        <p class="card-descricao">Veja todos os feriados nacionais de um ano usando a BrasilAPI.</p>
+        <div class="card-input-group">
+            <input class="card-input" type="number" id="input-feriado" placeholder="Digite o ano (ex: 2025)" min="2000" max="2100">
+            <button class="card-botao" onclick="buscarFeriados()">Buscar</button>
+        </div>
+        <div class="card-resultado" id="resultado-feriado"></div>
+    </div>
+
+    <!-- Card DDD -->
+    <div class="card-api">
+        <h3 class="card-titulo">Consulta de DDD</h3>
+        <p class="card-descricao">Descubra o estado e cidades de um DDD usando a BrasilAPI.</p>
+        <div class="card-input-group">
+            <input class="card-input" type="text" id="input-ddd" placeholder="Digite o DDD (ex: 66)" maxlength="2">
+            <button class="card-botao" onclick="buscarDDD()">Buscar</button>
+        </div>
+        <div class="card-resultado" id="resultado-ddd"></div>
+    </div>
+
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>
